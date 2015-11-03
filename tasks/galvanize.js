@@ -3,8 +3,8 @@ var _ = require('lodash');
 var uuid = require('uuid');
 
 function formatGalvanizeConfig(config) {
-    var options = config.options | [];
-    var configs = config.configs | [];
+    var options = config.options || [];
+    var configs = config.configs || [];
     var formattedOptions;
     var formattedConfigs;
     if (_.isArray(options)) {
