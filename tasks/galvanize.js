@@ -43,7 +43,16 @@ module.exports = function(grunt) {
     grunt.registerTask(
         'galvanize',
         'Run a single task multiple times with different options',
-        function(taskName) {
+        function(taskName,param1,param2,param3) {
+
+            var paramCount = arguments.length-1;
+            var params = [];
+
+            while(paramCount > 0) {
+                params.push(arguments[paramCount]);
+                paramCount--;
+            } 
+
             var galvanizeConfig = grunt.option('galvanizeConfig');
             var subTaskId = 'galvanize-' + 'taskName' + uuid.v1();
 
@@ -81,9 +90,14 @@ module.exports = function(grunt) {
                         setGalvanizeOptions(grunt, config);
 
                         //run original task
-                        grunt.task.run(taskName);
+                        if(params.length !== 0) {
+                            grunt.task.run(taskName+':'+params.join(':'));
+                        } else {
+                            grunt.task.run(taskName);
+                        }
                     }
                 );
+
                 grunt.task.run(galvanizedTaskName);
             });
         }
