@@ -1,11 +1,12 @@
 {
   "name": "grunt-galvenize",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Run tasks multiple times programmatically with dynamic options",
   "dependencies": {
     "lodash": "3.10.1",
     "uuid": "2.0.1"
   },
+  "main": "tasks/galvanize.js",
   "devDependencies": {
     "chai": "3.4.0",
     "grunt": "0.4.5",
