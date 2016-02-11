@@ -51,10 +51,10 @@ module.exports = function(grunt) {
             while(paramCount > 0) {
                 params.push(arguments[paramCount]);
                 paramCount--;
-            } 
+            }
 
             var galvanizeConfig = grunt.option('galvanizeConfig');
-            var subTaskId = 'galvanize-' + 'taskName' + uuid.v1();
+            var subTaskId = 'galvanize-' + taskName + uuid.v1();
 
             // validate inputs
             if (!grunt.task.exists(taskName)) {
