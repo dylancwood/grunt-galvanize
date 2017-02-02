@@ -1,6 +1,6 @@
 {
   "name": "grunt-galvanize",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "Run tasks multiple times programmatically with dynamic options",
   "dependencies": {
     "lodash": "3.10.1",
