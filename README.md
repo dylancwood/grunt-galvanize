@@ -1,3 +1,7 @@
+# Notice of name change
+If you are seeing this, than you have installed `grunt-galvenize`, not `grunt-galvanize`.
+Please install `grunt-galvanize` to be sure that you are on the project's master branch.
+
 # grunt-galvanize
 Run other grunt tasks multiple times with different options.
 
