@@ -1,6 +1,11 @@
 # grunt-galvanize
 Run other grunt tasks multiple times with different options.
 
+# Notice of name change
+Please be sure to install with `grunt-galvanize`, not `grunt-galvenize`.
+The master branch of this repo will henceforth be published to `grunt-galvanize`.
+I appologize for any inconvenience that this may cause.
+
 ## Install
 
 ```
