@@ -1,5 +1,5 @@
 {
-  "name": "grunt-galvenize",
+  "name": "grunt-galvanize",
   "version": "1.2.0",
   "description": "Run tasks multiple times programmatically with dynamic options",
   "dependencies": {
